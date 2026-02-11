@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Ejercicio Práctico 1</title>
+</head>
+<body>
+  <h1>Ejercicio Práctico 1</h1>
+
+  <script>
+    // Paso 1: Escribir directamente con document.writeln()
+    document.writeln("<h1>¡Hola Mundo!</h1>");
+
+    // Paso 2: Usar una variable
+    let mensaje = "¡Hola Mundo desde una variable!";
+    document.writeln("<p>" + mensaje + "</p>");
+
+    // Paso 3: Usar un arreglo (matriz) y recorrerlo con un bucle
+    let frases = ["Primera frase", "Segunda frase", "Tercera frase"];
+    document.writeln("<h2>Frases generadas desde un arreglo:</h2>");
+    for (let i = 0; i < frases.length; i++) {
+      document.writeln("<p>" + frases[i] + "</p>");
+    }
+
+    // Paso 4: Usar un objeto
+    let persona = {
+      nombre: "Loreto",
+      curso: "Front-End Trainee",
+      modulo: 4
+    };
+    document.writeln("<h2>Datos del objeto persona:</h2>");
+    document.writeln("<p>Nombre: " + persona.nombre + "</p>");
+    document.writeln("<p>Curso: " + persona.curso + "</p>");
+    document.writeln("<p>Módulo: " + persona.modulo + "</p>");
+
+    // Paso 5: Usar una función
+    function mostrarSaludo(nombre) {
+      document.writeln("<h2>¡Hola " + nombre + "!</h2>");
+    }
+    mostrarSaludo("Loreto");
+    mostrarSaludo("Mundo");
+  </script>
+</body>
+</html>
